@@ -21,63 +21,60 @@ Basic SKIA drawing
 
 Android Introduction
 ================================
-Android architecture:
-https://source.android.com/devices/architecture
-https://developer.android.com/guide/platform
+0) Android architecture:
+- https://source.android.com/devices/architecture
+- https://developer.android.com/guide/platform
 
-Flash Pixel phones online:
-https://flash.android.com
+1) Flash Pixel phones online:
+- https://flash.android.com
 
-Android source code:
-https://cs.android.com/
+2) Android source code:
+- https://cs.android.com/
 
-GUI programming language paradigm:
-Imperative
-Declarative
+3) GUI programming language paradigm:
+- Imperative
+- Declarative
 
-ADB: Android Debug Bridge
-adb cannot be used via USB and WI-FI (TCP/IP) connections.
+4) ADB: Android Debug Bridge
+- adb can be used via USB and WI-FI (TCP/IP) connections.
+- ADB Commands:
+- adb logcat
+- adb shell
+- adb disable-verity
+- adb reboot
+- adb reboot bootloader
 
-ADB Commands:
-1) adb logcat
-2) adb shell
-3) adb disable-verity
-4) adb reboot
-5) adb reboot bootloader
+5) Fastboot is a flash tool fot Android phones:
+- fastboot reboot
+- fastboot erase <PARTITION>
+- fastboot flash <PARTITION> <IMAGE_FILE>
 
-Fastboot is a flash tool fot Android phones:
-1) fastboot reboot
-2) fastboot erase <PARTITION>
-3) fastboot flash <PARTITION> <IMAGE_FILE>
+6) To unlock/lock the bootloader of an Android phone:
+- https://source.android.com/setup/build/running#unlocking-the-bootloader
+- fastboot flashing unlock
+- fastboot flashing lock
 
-To unlock/lock the bootloader of an Android phone:
-https://source.android.com/setup/build/running#unlocking-the-bootloader
-4) fastboot flashing unlock
-5) fastboot flashing lock
+7) System partitions:
+- /sys  -> More IO peripheral controls
+- /proc -> More Linux kernel related controls
+- /data -> All downloaded APKs and runtime files
+- /system -> Android framework and APIs
+- /vendor -> Vendor specific implementation
 
-System partitions:
-/sys  -> More IO peripheral controls
-/proc -> More Linux kernel related controls
-/data -> All downloaded APKs and runtime files
-/system -> Android framework and APIs
-/vendor -> Vendor specific implementation
+8) Zygote (How does a Android app start):
+- https://android.jlelse.eu/android-application-launch-explained-from-zygote-to-your-activity-oncreate-8a8f036864b
 
-Zygote (How does a Android app start):
-https://android.jlelse.eu/android-application-launch-explained-from-zygote-to-your-activity-oncreate-8a8f036864b
+9) Android App Lifecycle:
+- https://www.geeksforgeeks.org/activity-lifecycle-in-android-with-demo-app/
 
-Android App Lifecycle:
-https://www.geeksforgeeks.org/activity-lifecycle-in-android-with-demo-app/
-
-
-I/O peripherals an Android App can access via Java APIs:
-1) Proximity
-2) G-sensor
-3) GPS, WiFi
-4) 4G-LTE, 3G
-5) Camera
-6) Microphone
-7) Speaker
-...etc.
+10) I/O peripherals an Android App can access via Java APIs:
+- Proximity
+- G-sensor
+- GPS, WiFi
+- 4G-LTE, 3G
+- Camera
+- Microphone
+- Speaker
 
 Android App Development
 ================================
