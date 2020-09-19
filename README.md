@@ -18,3 +18,71 @@ Basic SKIA drawing
   p.setStyle(SkPaint::kFill_Style);
   canvas->drawRect(r, p);
 ```
+
+Android App Development
+================================
+0) Android Studio, SDK, NDK, am, pm, adb install, aapt, download an APK, APK file structure
+- Android Studio: https://developer.android.com/studio
+- https://developer.android.com/ndk/guides
+- adb pull /system/app/Maps/Maps.apk
+- adb install ABC.apk
+- adb uninstall ABC
+- adb install -r ABC.apk
+- APK key signing: https://developer.android.com/studio/publish/app-signing
+- https://www.techotopia.com/index.php/Generating_a_Signed_Release_APK_File_in_Android_Studio
+- adb shell pm dump all
+- adb shell pm list packages
+- https://stackoverflow.com/questions/22634446/sending-intent-to-broadcastreceiver-from-adb
+- adb shell am start -n com.example.demo/com.example.test.MainActivity
+- adb shell am force-stop <PACKAGE>
+- adb shell ps -A
+- adb shell kill <PID>
+
+1) A simple Andorid app (API version, Android OS version, deprecated APIs, event handling, compilation flow)
+- https://developer.android.com/reference
+- https://www.xda-developers.com/android-version-distribution-statistics-android-studio/
+- https://developer.android.com/guide/topics/ui/ui-events
+- https://www.tutorialspoint.com/android/android_event_handling.htm
+- https://en.wikibooks.org/wiki/Java_Programming/Compilation
+- https://medium.com/@banmarkovic/process-of-compiling-android-app-with-java-kotlin-code-27edcfcce616
+
+2) Layout, resource R.*, Button, Login page, button listener
+- https://developer.android.com/guide/topics/ui/declaring-layout
+- https://developer.android.com/reference/android/R
+- https://www.tutorialspoint.com/android/android_user_interface_layouts.htm
+- https://guides.codepath.com/android/Basic-Event-Listeners
+
+3) Debug, Profiling, GPU inspector, Man-in-the-middle (MITM), SSL pinning
+- https://gpuinspector.dev/
+- https://developer.android.com/studio/profile/network-profiler
+- https://www.charlesproxy.com/documentation/proxying/ssl-proxying/
+- https://blog.approov.io/securing-https-with-certificate-pinning-on-android
+- https://levelup.gitconnected.com/bypassing-ssl-pinning-on-android-3c82f5c51d86
+
+4) logcat
+- https://developer.android.com/reference/android/util/Log
+- __android_log_print();
+- https://developer.android.com/ndk/reference/group/logging
+
+5) Main UI thread and AsyncTask
+- https://developer.android.com/reference/android/os/AsyncTask
+- https://www.journaldev.com/8988/android-studio-tutorial-hello-world-app
+- https://stackoverflow.com/questions/9671546/asynctask-android-example
+
+6) Permission, HTTP example, network policy
+- https://developer.android.com/training/basics/network-ops/connecting#java
+- https://developer.android.com/reference/android/Manifest.permission
+- https://developer.android.com/reference/java/net/HttpURLConnection
+
+7) Perfetto and systrace
+- https://developer.android.com/studio/command-line/perfetto
+- https://ui.perfetto.dev/#!/
+- https://developer.android.com/topic/performance/tracing/command-line
+- https://source.android.com/devices/tech/debug/systrace
+
+8) Practice the usage of UI widgets
+- https://www.tutorialspoint.com/android/android_alert_dialoges.htm
+
+9) Practice Java APIs
+- https://developer.android.com/reference
+- https://www.geeksforgeeks.org/java-io-inputstream-class-in-java/
